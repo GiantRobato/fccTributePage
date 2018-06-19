@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'rg-future';
+    font-style: normal;
+    font-weight: normal;
+    src: local('rg-future'), url('./fonts/rg-future.otf') format('opentype');
+  }
+
+body{
+    background-color: hsl(208, 100%, 22%);
+    margin: 0px;
+    color: whitesmoke;    
+}
+
+#main {
+    background-color: hsl(208, 100%, 40%);
+    /* background-color: #000; */
+    text-align: center;
+    margin: 0px;
+}
+
+.intro {
+    background-image: url("./images/OriginalTrilogy.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+#title{
+    position: absolute;
+    left: -100000px;
+    height: 0px;
+}
+
+#image-div{
+    max-width: 100%;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;    
+}
+
+#img-caption {
+    font-family: rg-future;
+    font-size: 40px;
+    margin-top: -5px;
+    text-shadow: -3px 3px rgb(66,71,93);
+}
+
+#awardsDiv{
+    margin: auto auto 0px 10px;
+    text-align: left;
+}
+
+#ratchetSlide{
+    background-image: url("./images/wallPaper3.jpg"),
+    linear-gradient(90deg,
+    black,
+    dimgray,
+    dimgray,
+    gray,
+    white,
+    white,
+    white);    
+    background-blend-mode: multiply;    
+    height: 100%;
+    background-size: cover;
+    background-position: center;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#ratchetHistory{
+    margin-top: 5px;
+}
+
+#historyList{
+    text-align: justify;
+    max-width: 625px;
+}
+
+#historyList li{
+    margin: 0 0 12px 0;
+}
+
+.games{
+    background-image:
+        url("./images/ratchet_and_clank_wallpaper.jpg"),
+        linear-gradient(90deg,
+        white,
+        white,
+        white,
+        gray,
+        dimgray,
+        dimgray,
+        black);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.sectionTitle{
+    margin: auto;
+    font-size: 70px;
+    text-shadow: -2px 2px rgb(66,71,93);    
+    /* font-family: rg-future; */
+}
+
+#gamesDiv {
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;    
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-gap: 10px 10px;
+}
+
+#gamesSection{
+    float: right;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.gameImage{
+    height: 140px;
+}
+
+.gameCaption{
+    text-shadow: -1.5px 1.5px rgb(66,71,93);
+    font-weight: bold;    
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .awards{
+        font-size: 40px;
+    }
+    #gamesDiv {
+        grid-template-columns: repeat(2, 150px);
+        grid-gap: 10px 10px;
+        float: none;
+    }    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .awards{
+        font-size: 20px;
+    }
+    #gamesDiv {
+        grid-template-columns: repeat(6, 150px);
+        grid-gap: 10px 10px;
+    }        
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #gamesDiv {
+        grid-template-columns: repeat(4, 150px);
+        grid-gap: 10px 10px;
+    }    
+}
