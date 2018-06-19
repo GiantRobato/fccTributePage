@@ -84,7 +84,7 @@ body{
 
 #historyList{
     text-align: justify;
-    max-width: 625px;
+    max-width: 400px;
 }
 
 #historyList li{
@@ -206,16 +206,26 @@ body{
     color: rgb(194,127,57) !important;
 }
 
+#historyOverflow{
+    background-image:url("./images/rcWallpaper3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .awards{
         font-size: 40px;
     }
-    #gamesDiv {
-        grid-template-columns: repeat(2, 150px);
-        grid-gap: 10px 10px;
-        float: none;
+    #historyOverflow{
+        height: 100%;
+    }
+
+    #historyList{
+        max-width: 80%;
+        font-size: 30px;
     }    
 }
 
@@ -228,6 +238,13 @@ body{
         grid-template-columns: repeat(6, 150px);
         grid-gap: 10px 10px;
     }        
+    #historyOverflow{
+        height: 100%;
+    }        
+    #historyList{
+        max-width: 80%;
+        font-size: 20px ;        
+    }                 
 }
 
 /* Large Devices, Wide Screens */
@@ -235,5 +252,12 @@ body{
     #gamesDiv {
         grid-template-columns: repeat(4, 150px);
         grid-gap: 10px 10px;
-    }    
+    } 
+    #historyOverflow{
+        height: 0%;
+    }      
+    #historyList{
+        max-width: 550px;
+        font-size: 15px ;        
+    }                 
 }
