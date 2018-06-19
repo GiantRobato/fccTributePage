@@ -141,6 +141,72 @@ body{
     font-weight: bold;    
 }
 
+#endSlide{
+    background-image:url("./images/rcWallpaper2.jpg"),
+    linear-gradient(180deg,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    black);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  
+}
+
+#credits{
+    text-shadow: -1.5px 1.5px rgb(66,71,93);
+    margin: auto auto 20px auto;    
+}
+
+#learnMore {
+    margin: auto;
+    background: rgb(218,225,233);
+    text-shadow: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px 5px #888888;
+    width: 200px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#learnMore:hover{
+    background: rgb(225,228,234);
+    color: rgb(215,177,102);
+}
+
+#credits a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: rg-future; */
+    color: rgb(3,191,228);
+}
+
+#credits a:visited{
+    text-decoration: none;    
+    color: rgb(123,51,17);
+}
+
+#personalLink a{
+    color: white !important;
+}
+
+#personalLink a:hover{
+    color: rgb(194,127,57) !important;
+}
+
+
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .awards{
